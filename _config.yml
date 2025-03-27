@@ -16,7 +16,7 @@ timezone:
 
 title: The Open Trade Project # the main title
 
-tagline: A data-driven analysis framework for NFL trades
+tagline: A data-driven analysis framework for NFL draft trades
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
