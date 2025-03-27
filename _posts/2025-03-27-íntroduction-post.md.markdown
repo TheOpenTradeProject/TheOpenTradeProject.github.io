@@ -1,12 +1,12 @@
 ---
 title: Presentation of the Open Trade Project
-date: 2025-03-27 10:00:00 -0700
-categories: [Personal, Blogging]
+date: 2025-03-27 10:00:00 -0800
+categories: [Blogging]
 tags: [introduction]
 description: Understand our data-driven grading approach
 ---
 
-Hello, world! Welcome to my very first blog post on this shiny new Jekyll site powered by the Chirpy theme. Today, March 27, 2025, marks the beginning of my journey to share thoughts, ideas, and maybe a few quirky stories with you.
+Welcome to the Open Trade Project!
 
 ## Why I Started This Blog
 
