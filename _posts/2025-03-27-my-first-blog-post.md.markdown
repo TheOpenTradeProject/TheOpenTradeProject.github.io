@@ -14,7 +14,7 @@ I’ve always wanted a space to document my adventures—whether they’re codin
 
 ## What to Expect
 
-Here’s a quick rundown of what I might write about:
+Here's something I changed just to creat a new blog post:
 
 - **Tech Stuff**: Bits of code, tutorials, or whatever I’m tinkering with.
 - **Random Thoughts**: Life, the universe, and everything in between.
