@@ -22,4 +22,7 @@ Trades for the 2025 NFL Draft will be graded live [here](https://x.com/TheOpenTr
 
 The Jimmy Johnson Trade Value Chart is a widely used tool in the NFL to assess the relative value of draft picks during trades. Created in the early 1990s by former Dallas Cowboys head coach Jimmy Johnson, the chart assigns a numerical value to each pick in the draft, with the highest values placed on early first-round selections and progressively lower values assigned to later picks. This straightforward scoring system helps teams evaluate whether a proposed trade involving draft picks is fair or advantageous. 
 
+![The Jimmy Johnson Trade Value Chart](assets/img/JJtradechart.svg)
+*Figure 1: The classic Jimmy Johnson Trade Value Chart, a staple in NFL draft trade analysis.*
+
 While the chart has been criticized for being somewhat outdated, particularly in how it undervalues mid-to-late round picks in modern analytics, it remains a foundational reference for front offices when negotiating trades, due to its simplicity and historical influence on draft strategy.
