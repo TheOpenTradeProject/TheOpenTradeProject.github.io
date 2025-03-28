@@ -10,24 +10,13 @@ Welcome to the Open Trade Project!
 
 ## Why I Started This Blog
 
-I’ve always wanted a space to document my adventures—whether they’re coding experiments, random musings, or just life updates. Jekyll seemed like the perfect tool: lightweight, customizable, and no databases to fuss over. Plus, the Chirpy theme makes it look sleek without me breaking a sweat.
+I’ve always been interested in data analysis and how it applies to the roster building aspects of NFL teams, and draft season is one of my favorite parts of the year. The league is increasingly paying attention to data science, as evidenced by NFL Next Gen Stats and Pro Football Focus. The internet is full of mock drafts and projectionsn and I wanted to contribute in some way.
 
-Here's my blog link: [Follow me on X](https://x.com/AndyHermanNFL)
+Scouting prospects is a highly subjective process; each team has its own priorities and athletic requirements, and we'll never know what happens inside war rooms. I wanted to stay away from speculating and projecting players as much as possible. Eventually, I had an idea: how to reimagine the current NFL trade chart using modern data analysis techniques? The result is The Open Trade Project.
+
+Over the past few months, I have gathered data for all NFL draft trades since 2002 (when the current format was established). I evaluated the trades using the classic Jimmy Johnson model and added uncertainty to the value of each pick using machine learning. I also developed an open, free-to-use [draft trade grader](https://huggingface.co/spaces/TheOpenTradeProject/Sample_Draft_Grader).
+
+Trades for the 2025 NFL Draft will be graded live [here](https://x.com/TheOpenTrade/).
 
 ## What to Expect
 
-Here's something I changed just to creat a new blog post:
-
-- **Tech Stuff**: Bits of code, tutorials, or whatever I’m tinkering with.
-- **Random Thoughts**: Life, the universe, and everything in between.
-- **Fun Media**: Maybe a photo or two, like this one:
-
-![My Desk Setup](/assets/img/my-desk.jpg){: w="700" h="400" }
-_My current desk setup where all the magic (and coffee spills) happen._
-
-## Let’s Connect
-
-Feel free to drop a comment below (if I’ve got that set up right) or find me on Twitter. Here’s to more posts and less procrastination!
-
-Cheers,  
-[Your Name]
