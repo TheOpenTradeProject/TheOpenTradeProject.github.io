@@ -12,6 +12,8 @@ Welcome to the Open Trade Project!
 
 I’ve always wanted a space to document my adventures—whether they’re coding experiments, random musings, or just life updates. Jekyll seemed like the perfect tool: lightweight, customizable, and no databases to fuss over. Plus, the Chirpy theme makes it look sleek without me breaking a sweat.
 
+Here's my blog link: [Link Text]([URL](https://x.com/AndyHermanNFL?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor))
+
 ## What to Expect
 
 Here's something I changed just to creat a new blog post:
