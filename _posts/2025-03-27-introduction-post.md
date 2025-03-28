@@ -25,4 +25,4 @@ The Jimmy Johnson Trade Value Chart is a widely used tool in the NFL to assess t
 ![The Jimmy Johnson Trade Value Chart](assets/img/JJtradechart.svg)
 *Figure 1: The classic Jimmy Johnson Trade Value Chart, a staple in NFL draft trade analysis.*
 
-While the chart has been criticized for being somewhat outdated, particularly in how it undervalues mid-to-late round picks in modern analytics, it remains a foundational reference for front offices when negotiating trades, due to its simplicity and historical influence on draft strategy.
+NFL draft trades don't always reflect pick values according to the Jimmy Johnson model, leading to speculation about "winners or losers" for each trade, as well as the creation of new models which better describe more recent trades, such as the [Rich Hill model.](https://www.patspulpit.com/2018/4/21/17256758/2018-nfl-draft-value-chart-rich-hill) 
