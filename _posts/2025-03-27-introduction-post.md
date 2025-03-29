@@ -66,7 +66,13 @@ The AI model outputs standard deviations for each pick. That information enables
 
 ## Grading: a natural evolution of variability analysis
 
-After the mean and standard deviation are known, it is possible to take advantage of another cool feature of normal distributions: [percentiles](https://www.youtube.com/watch?v=MRqtXL2WX2M](https://en.wikipedia.org/wiki/Percentile_rank). For example, if a team sells pick 21 for 836 points, they got a 90-th percentile value (better value than 90% of all trades involving that pick). Similarly, the 10-th percentile value (bottom 10% value among all possible trades) is 764 points. Percentiles are really useful when it comes to grading transactions (but, as we'll see, considering only percentiles is not always a fair way to evaluate trades). 
+After the mean and standard deviation are known, it is possible to take advantage of another cool feature of normal distributions: [percentiles](https://en.wikipedia.org/wiki/Percentile_rank). For example, if a team sells pick 21 for 836 points, they got a 90-th percentile value (better value than 90% of all trades involving that pick). Similarly, the 10-th percentile value (bottom 10% value among all possible trades) is 764 points. Percentiles are really useful when it comes to grading transactions (but, as we'll see, considering only percentiles is not always a fair way to evaluate trades). 
 
+## The draft grade simulator
 
+The visual output of the Open Trade Project is a draft simulator/grader, available [here](https://huggingface.co/spaces/TheOpenTradeProject/Sample_Draft_Grader). Simply choose the team identifiers and enter pick numbers, and the simulator will generate a card featuring information about the trade and color-coded grades. __The cards are free to use and share!__ 
+
+## The grading algorithm
+
+Let's imagine a generic trade where one team gets 
 
