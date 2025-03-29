@@ -14,7 +14,8 @@ Scouting prospects is a highly subjective process; each team has its own priorit
 
 Over the past few months, I have gathered data for all NFL draft trades since 2002 (when the current format was established). I evaluated the trades using the classic Jimmy Johnson model and added uncertainty to the value of each pick using machine learning. I also developed an open, free-to-use [draft trade grader](https://huggingface.co/spaces/TheOpenTradeProject/Sample_Draft_Grader).
 
-This post is an overview of the project. In the upcoming weeks, further posts will take a deep dive on specific aspects.
+This post is an overview of the project, or "the very minimum that you need to know" if you want to use this model.
+In the upcoming weeks, further posts will take a deep dive on specific aspects.
 
 Trades for the 2025 NFL Draft will be graded live [here](https://x.com/TheOpenTrade/).
 
@@ -29,7 +30,7 @@ NFL draft trades don't always reflect pick values according to the Jimmy Johnson
 
 ## No love for standard deviation?
 
-Suppose the average cost of a gallon of gas in Texas is $2.75. That _does not mean that every gallon of gas in Texas sells for that much_. In fact, there is a variability of gas prices around the mean; that variability is called [standard deviation.](https://www.youtube.com/watch?v=MRqtXL2WX2M). Suppose that, in our example, the standard deviation is 10 cents. If the price distribution is normal, according to [the theory of normal distributions](https://www.youtube.com/watch?v=MRqtXL2WX2M](https://en.wikipedia.org/wiki/Normal_distribution), 68% of the gallons of gas in Texas are sold for an amount between $2.65 and $2.85; 95% are sold for an amount between $2.55 and $2.95; and 99% are sold for an amount between $2.45 and $3.05. 
+Suppose the average cost of a gallon of gas in Texas is $2.75. That _does not mean that every gallon of gas in Texas sells for that much_. In fact, there is a variability of gas prices around the mean; that variability is called [standard deviation](https://www.youtube.com/watch?v=MRqtXL2WX2M). Suppose that, in our example, the standard deviation is 10 cents. If the price distribution is normal, according to [the theory of normal distributions](https://www.youtube.com/watch?v=MRqtXL2WX2M](https://en.wikipedia.org/wiki/Normal_distribution), 68% of the gallons of gas in Texas are sold for an amount between $2.65 and $2.85; 95% are sold for an amount between $2.55 and $2.95; and 99% are sold for an amount between $2.45 and $3.05. 
 
 This example provides a valuable takeaway in terms of evaluating draft charts. Both options describe the value of picks __only in terms of a mean value__; in other words, the possibility of variation in the cost due to external circumstances is disregarded. In the real NFL draft, multiple factors affect the value of a pick, just like the cost of gas across different gas stations. It is clear that any redesign of the Jimmy Johnson model that does not take cost variability into account will not capture all the information that the available data on past trades has to offer.
 
@@ -43,7 +44,7 @@ After the mean and standard deviation are known, it is possible to take advantag
 
 ## How to determine the cost variability for each pick?
 
-The possibility of calculating mean and standard deviation presents a great opportunity for the development of a more accurate draft chart. In the past 23 drafts, there has been a great number of trades. The starting dataset constitutes of these trades, and presents a few challenges:
+The possibility of calculating mean and standard deviation presents a great opportunity for the development of a more accurate draft chart. In the drafts between 2002 and 2024, there has been a great number of trades. The starting dataset constitutes of these trades, and presents a few challenges:
 
 - Trades mostly involve multiple picks being transacted, making it hard to pinpoint the value that each pick is selling for. For example, if a team ships picks 21 and 144 for picks worth 850 points, part of that value is being paid for pick 21 and part is being paid for pick 144. The strategy to deal with that challenge will be presented in an upcoming post.
 - Many trades involve players. The goal of this project is to evaluate the value of picks, so a choice was made to disconsider trades involving players, regardless of whether the player is a future hall of famer or a borderline starter.
@@ -58,6 +59,10 @@ In that example, Detroit traded picks 6 and 81 to Arizona, receiving picks 12, 3
 Once all trades were compiled, the value for each trade was calculated by means of the Jimmy Johnson chart. In our previous example, Detroit received 1785 points, while Arizona received 1784.2 points. These calculations provide many insights, to be explored in a future post. For now, it is enough to state that __the Jimmy Johnson trade chart is not as bad as people think, as far as the average value of each pick is concerned__. 
 
 ## The mathematical model 
+
+For simplicity (and according to the observations of the previous paragraph), it was assumed that the average value for each pick provided by the Jimmy Johnson trade chart is correct. The model focuses on the variability, i.e., the accepted uncertainty around that value. The detailed description of the model is highly mathematical and may not be of interest to every reader, and will be provided in a separate post.
+
+In very simple terms, we are assuming that the value of each pick is normally distributed, with the average value provided by the Jimmy Johnson chart. Then, we are applying an artificial intelligence model to determine the standard deviation for each pick. A standard deviation of 28 points for pick 21 is an actual output of our model; as another example, pick 91 has an average value of 136 points and a standard deviation of 11.6 points. The model was fine-tuned to account for further challenges. For example, none of the 453 trades in the dataset involve pick 1. In that case, we considered that trades involving the surrounding picks (for example, picks 2, 3 and 4) affect the value of pick 1, each to a different extent (a trade involving pick 2 affects the value of pick 1 more than a trade involving pick 3 affects the value of pick 1, for example). This approach makes extensive use of [correlation theory](https://en.wikipedia.org/wiki/Correlation) and was useful for other picks when data was lacking.
 
 xxx not all picks have entries
 
