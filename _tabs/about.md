@@ -1,20 +1,25 @@
 ---
 layout: page
-title: About
+title: About the Open Trade Project
 ---
 
-# About This Project
+Welcome to **The Open Trade Project**! This website contains information about our data analysis approach to reinvent the evaluation of modern NFL draft trades. An overview of the approach and available resources can be found [here](https://theopentradeproject.github.io/posts/introduction-post/).
 
-Welcome to **The Open Trade Project**! This website is designed to help users generate NFL draft cards locally, providing a seamless and cost-free experience. 
+## Copyright and Disclaimer
 
-## Features
-- Local NFL draft card generation
-- User-friendly interface
-- No external dependencies or costs
+© 2025 The Open Trade Project. All rights reserved.
 
-This project is hosted using GitHub Pages and built with the [Chirpy Jekyll Theme](https://github.com/cotes2020/jekyll-theme-chirpy).
+### Trademark Disclaimer
+The terms "NFL," "Next Gen Stats," "Pro Football Focus," and team names (e.g., Green Bay Packers) are registered trademarks of their respective owners. This project is not affiliated with, endorsed by, or associated with the NFL, NFL Next Gen Stats, Pro Football Focus, or any of their affiliates.
 
-For more information, feel free to explore the repository or contribute to the project!
+### Usage and Purpose
+The Open Trade Project is a research initiative designed for educational and analytical purposes. Any references to the NFL, its trademarks, or related entities are used solely for descriptive purposes to facilitate understanding of the project's scope and outcomes. All generated materials, such as grading cards, are part of a research-oriented tool and do not represent official content.
+
+### Color Usage
+Team-related colors are used solely to enhance the visual presentation of generated cards. Efforts have been made to ensure that the selected colors are distinct and do not replicate the copyrighted or trademarked colors of any NFL team.
+
+### Additional Disclaimer
+The Open Trade Project is not affiliated with the NFL, NFL Next Gen Stats, Pro Football Focus, or any of their affiliates. Any references to these entities are for descriptive and informational purposes only.
 
 ---
 *Last updated: {{ site.time | date: "%B %d, %Y" }}*
