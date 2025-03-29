@@ -5,10 +5,6 @@ title: About the Open Trade Project
 
 Welcome to **The Open Trade Project**! This website contains information about our data analysis approach to reinvent the evaluation of modern NFL draft trades. An overview of the approach and available resources can be found [here](https://theopentradeproject.github.io/posts/introduction-post/).
 
-## Copyright and Disclaimer
-
-© 2025 The Open Trade Project. All rights reserved.
-
 ### Trademark Disclaimer
 The terms "NFL," "Next Gen Stats," "Pro Football Focus," and team names (e.g., Green Bay Packers) are registered trademarks of their respective owners. This project is not affiliated with, endorsed by, or associated with the NFL, NFL Next Gen Stats, Pro Football Focus, or any of their affiliates.
 
