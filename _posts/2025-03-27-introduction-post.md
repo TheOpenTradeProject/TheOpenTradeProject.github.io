@@ -64,5 +64,5 @@ For simplicity (and according to the observations of the previous paragraph), it
 
 In very simple terms, we are assuming that the value of each pick is normally distributed, with the average value provided by the Jimmy Johnson chart. Then, we are applying an artificial intelligence model to determine the standard deviation for each pick. A standard deviation of 28 points for pick 21 is an actual output of our model; as another example, pick 91 has an average value of 136 points and a standard deviation of 11.6 points. The model was fine-tuned to account for further challenges. For example, none of the 453 trades in the dataset involve pick 1. In that case, we considered that trades involving the surrounding picks (for example, picks 2, 3 and 4) affect the value of pick 1, each to a different extent (a trade involving pick 2 affects the value of pick 1 more than a trade involving pick 3 affects the value of pick 1, for example). This approach makes extensive use of [correlation theory](https://en.wikipedia.org/wiki/Correlation) and was useful for other picks when data was lacking.
 
-xxx not all picks have entries
+
 
