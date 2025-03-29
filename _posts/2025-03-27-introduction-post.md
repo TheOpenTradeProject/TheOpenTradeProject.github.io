@@ -23,7 +23,7 @@ Trades for the 2025 NFL Draft will be graded live [here](https://x.com/TheOpenTr
 The Jimmy Johnson Trade Value Chart is a widely used tool in the NFL to assess the relative value of draft picks during trades. Created in the early 1990s by former Dallas Cowboys head coach Jimmy Johnson, the chart assigns a numerical value to each pick in the draft, with the highest values placed on early first-round selections and progressively lower values assigned to later picks. This straightforward scoring system helps teams evaluate whether a proposed trade involving draft picks is fair or advantageous. 
 
 ![The Jimmy Johnson Trade Value Chart](assets/img/JJtradechart.svg)
-*Figure 1: The classic Jimmy Johnson Trade Value Chart, a staple in NFL draft trade analysis.*
+*Figure 1: The classic Jimmy Johnson Trade Value Chart, a staple in NFL draft trade analysis. The value function decays very rapidly.*
 
 NFL draft trades don't always reflect pick values according to the Jimmy Johnson model, leading to speculation about "winners or losers" for each trade, as well as the creation of new models which better describe more recent trades, such as the [Rich Hill model.](https://www.patspulpit.com/2018/4/21/17256758/2018-nfl-draft-value-chart-rich-hill). There is a common aspect in both models: each pick has a fixed value; for example, pick 21 is worth 800 points in the Jimmy Johnson chart. Suppose 3 hypothetical trades, where pick 21 sells for 780, 800 and 820 points. On average, pick 21 was transacted for 800 points. But how about the variance?
 
@@ -33,10 +33,31 @@ Suppose the average cost of a gallon of gas in Texas is $2.75. That _does not me
 
 This example provides a valuable takeaway in terms of evaluating draft charts. Both options describe the value of picks __only in terms of a mean value__; in other words, the possibility of variation in the cost due to external circumstances is disregarded. In the real NFL draft, multiple factors affect the value of a pick, just like the cost of gas across different gas stations. It is clear that any redesign of the Jimmy Johnson model that does not take cost variability into account will not capture all the information that the available data on past trades has to offer.
 
+## Including variability in the cost of draft picks
+
+Our goal is to fit a normal distribution for each pick, so that, instead of saying _"pick 21 is worth 800 points"_, we will say (for example) _"the value for pick 21 has a mean of 800 points and a standard deviation of 28 points"_. The second statement carries much more information: using the same approach as in the gas example, we can say that, in 68% of trades, pick 21 sells for between 772 and 828 points; in 95% of the trades, it sells for between 744 and 856 points; and, in 99% of the trades, it sells for between 716 and 894 points. For most real world applications, the interval corresponding to 95% of the transactions is considered "normal" or "typical". This means that, in our case, pick 21 is reasonably expected to sell for a value between 744 and 856 points. 
+
+## Grading: a natural evolution of variability analysis
+
+After the mean and standard deviation are known, it is possible to take advantage of another cool feature of normal distributions: [percentiles](https://www.youtube.com/watch?v=MRqtXL2WX2M](https://en.wikipedia.org/wiki/Percentile_rank). For example, if a team sells pick 21 for 836 points, they got a 90-th percentile value (better value than 90% of all trades involving that pick). Similarly, the 10-th percentile value (bottom 10% value among all possible trades) is 764 points. Percentiles are really useful when it comes to grading transactions (but considering only percentiles is not always a fair way to evaluate trades). 
+
 ## How to determine the cost variability for each pick?
 
-Our goal is to fit a normal distribution for each pick, so that, instead of saying _"pick 21 is worth 800 points"_, we will say (for example) _"the value for pick 21 has a mean of 800 points and a standard deviation of 28 points"_. The second statement carries much more information: using the same approach as in the gas example, we can say that, in 68% of trades, pick 21 sells for between 772 and 828 points; in 95% of the trades, it sells for between 744 and 856 points; and, in 99% of the trades, it sells for between 716 and 894 points. For most real world applications, the interval corresponding to 95% of the transactions is considered "normal", or "typical". This means that, in our case, pick 21 is reasonably expected to sell for a value between 744 and 856 points. 
+The possibility of calculating mean and standard deviation presents a great opportunity for the development of a more accurate draft chart. In the past 23 drafts, there has been a great number of trades. The starting dataset constitutes of these trades, and presents a few challenges:
 
+- Trades mostly involve multiple picks being transacted, making it hard to pinpoint the value that each pick is selling for. For example, if a team ships picks 21 and 144 for picks worth 850 points, part of that value is being paid for pick 21 and part is being paid for pick 144. The strategy to deal with that challenge will be presented in an upcoming post.
+- Many trades involve players. The goal of this project is to evaluate the value of picks, so a choice was made to disconsider trades involving players, regardless of whether the player is a future hall of famer or a borderline starter.
+- Many trades also involve future picks, increasing the uncertainty (since not all picks are known at the time of the trade). For now, the model does not support trades involving future picks, although a future evolution certainly will be able to handle that scenario.
 
+These limitations reduce our dataset to 453 observed trades (down from 561 if future picks are considered). Each of these trades was recorded in a text file. One example is shown below:
 
+__2023	DET	"6;81"	ARI	"12;34;168"	D__
+
+In that example, Detroit traded picks 6 and 81 to Arizona, receiving picks 12, 34 and 168 in return.
+
+Once all trades were compiled, the value for each trade was calculated by means of the Jimmy Johnson chart. In our previous example, Detroit received 1785 points, while Arizona received 1784.2 points. These calculations provide many insights, to be explored in a future post. For now, it is enough to state that __the Jimmy Johnson trade chart is not as bad as people think, as far as the average value of each pick is concerned__. 
+
+## The mathematical model 
+
+xxx not all picks have entries
 
