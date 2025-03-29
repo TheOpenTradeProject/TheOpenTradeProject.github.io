@@ -25,4 +25,8 @@ The Jimmy Johnson Trade Value Chart is a widely used tool in the NFL to assess t
 ![The Jimmy Johnson Trade Value Chart](assets/img/JJtradechart.svg)
 *Figure 1: The classic Jimmy Johnson Trade Value Chart, a staple in NFL draft trade analysis.*
 
-NFL draft trades don't always reflect pick values according to the Jimmy Johnson model, leading to speculation about "winners or losers" for each trade, as well as the creation of new models which better describe more recent trades, such as the [Rich Hill model.](https://www.patspulpit.com/2018/4/21/17256758/2018-nfl-draft-value-chart-rich-hill) 
+NFL draft trades don't always reflect pick values according to the Jimmy Johnson model, leading to speculation about "winners or losers" for each trade, as well as the creation of new models which better describe more recent trades, such as the [Rich Hill model.](https://www.patspulpit.com/2018/4/21/17256758/2018-nfl-draft-value-chart-rich-hill). There is a common aspect in both models: each pick has a fixed value; for example, pick 21 is worth 800 points in the Jimmy Johnson chart. Suppose 3 hypothetical trades, where pick 21 sells for 780, 800 and 820 points. On average, pick 21 was transacted for 800 points. But how about the variance?
+
+## No love for standard deviation?
+
+Suppose the average cost of a gallon of gas in Texas is $2.75. That __does not mean that every gallon of gas in Texas sells for that much__. 
