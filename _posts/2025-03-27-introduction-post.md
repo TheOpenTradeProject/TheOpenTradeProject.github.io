@@ -38,10 +38,6 @@ This example provides a valuable takeaway in terms of evaluating draft charts. B
 
 Our goal is to fit a normal distribution for each pick, so that, instead of saying _"pick 21 is worth 800 points"_, we will say (for example) _"the value for pick 21 has a mean of 800 points and a standard deviation of 28 points"_. The second statement carries much more information: using the same approach as in the gas example, we can say that, in 68% of trades, pick 21 sells for between 772 and 828 points; in 95% of the trades, it sells for between 744 and 856 points; and, in 99% of the trades, it sells for between 716 and 894 points. For most real world applications, the interval corresponding to 95% of the transactions is considered "normal" or "typical". This means that, in our case, pick 21 is reasonably expected to sell for a value between 744 and 856 points. 
 
-## Grading: a natural evolution of variability analysis
-
-After the mean and standard deviation are known, it is possible to take advantage of another cool feature of normal distributions: [percentiles](https://www.youtube.com/watch?v=MRqtXL2WX2M](https://en.wikipedia.org/wiki/Percentile_rank). For example, if a team sells pick 21 for 836 points, they got a 90-th percentile value (better value than 90% of all trades involving that pick). Similarly, the 10-th percentile value (bottom 10% value among all possible trades) is 764 points. Percentiles are really useful when it comes to grading transactions (but considering only percentiles is not always a fair way to evaluate trades). 
-
 ## How to determine the cost variability for each pick?
 
 The possibility of calculating mean and standard deviation presents a great opportunity for the development of a more accurate draft chart. In the drafts between 2002 and 2024, there has been a great number of trades. The starting dataset constitutes of these trades, and presents a few challenges:
@@ -60,9 +56,17 @@ Once all trades were compiled, the value for each trade was calculated by means 
 
 ## The mathematical model 
 
-For simplicity (and according to the observations of the previous paragraph), it was assumed that the average value for each pick provided by the Jimmy Johnson trade chart is correct. The model focuses on the variability, i.e., the accepted uncertainty around that value. The detailed description of the model is highly mathematical and may not be of interest to every reader, and will be provided in a separate post.
+For simplicity (and according to the observations of the previous paragraph), it was assumed that the average value for each pick provided by the Jimmy Johnson trade chart is correct. The model focuses on the variability, i.e., the accepted uncertainty around that value. The detailed description of the model is highly mathematical and may not be of interest to every reader, and will be provided in a separate post. 
 
-In very simple terms, we are assuming that the value of each pick is normally distributed, with the average value provided by the Jimmy Johnson chart. Then, we are applying an artificial intelligence model to determine the standard deviation for each pick. A standard deviation of 28 points for pick 21 is an actual output of our model; as another example, pick 91 has an average value of 136 points and a standard deviation of 11.6 points. The model was fine-tuned to account for further challenges. For example, none of the 453 trades in the dataset involve pick 1. In that case, we considered that trades involving the surrounding picks (for example, picks 2, 3 and 4) affect the value of pick 1, each to a different extent (a trade involving pick 2 affects the value of pick 1 more than a trade involving pick 3 affects the value of pick 1, for example). This approach makes extensive use of [correlation theory](https://en.wikipedia.org/wiki/Correlation) and was useful for other picks when data was lacking.
+In very simple terms, we are assuming that the value of each pick is normally distributed, with the average value provided by the Jimmy Johnson chart. Then, we are applying an artificial intelligence model to determine the standard deviation for each pick. A standard deviation of 28 points for pick 21 is an actual output of our model; as another example, pick 91 has an average value of 136 points and a standard deviation of 11.6 points. The model was fine-tuned to account for further challenges. 
+
+For example, none of the 453 trades in the dataset involve pick 1. In that case, we considered that trades involving the surrounding picks (for example, picks 2, 3 and 4) affect the value of pick 1, each to a different extent (a trade involving pick 2 affects the value of pick 1 more than a trade involving pick 3 affects the value of pick 1, for example). This approach makes extensive use of [correlation theory](https://en.wikipedia.org/wiki/Correlation) and was useful for other picks when data was lacking.
+
+The AI model outputs standard deviations for each pick. That information enables the creation of the most user-friendly feature of the project. The draft simulator.
+
+## Grading: a natural evolution of variability analysis
+
+After the mean and standard deviation are known, it is possible to take advantage of another cool feature of normal distributions: [percentiles](https://www.youtube.com/watch?v=MRqtXL2WX2M](https://en.wikipedia.org/wiki/Percentile_rank). For example, if a team sells pick 21 for 836 points, they got a 90-th percentile value (better value than 90% of all trades involving that pick). Similarly, the 10-th percentile value (bottom 10% value among all possible trades) is 764 points. Percentiles are really useful when it comes to grading transactions (but, as we'll see, considering only percentiles is not always a fair way to evaluate trades). 
 
 
 
