@@ -29,4 +29,12 @@ NFL draft trades don't always reflect pick values according to the Jimmy Johnson
 
 ## No love for standard deviation?
 
-Suppose the average cost of a gallon of gas in Texas is $2.75. That __does not mean that every gallon of gas in Texas sells for that much__. 
+Suppose the average cost of a gallon of gas in Texas is $2.75. That _does not mean that every gallon of gas in Texas sells for that much_. In fact, there is a variability of gas prices around the mean; that variability is called [standard deviation.](https://www.youtube.com/watch?v=MRqtXL2WX2M). Suppose that, in our example, the standard deviation is 10 cents. If the price distribution is normal, according to [the theory of normal distributions]([https://www.youtube.com/watch?v=MRqtXL2WX2M](https://en.wikipedia.org/wiki/Normal_distribution), 68% of the gallons of gas in Texas are sold for an amount between $2.65 and $2.85; 95% are sold for an amount between $2.55 and $2.95; and 99% are sold for an amount between $2.45 and $3.05. 
+
+This example provides a valuable takeaway in terms of evaluating draft charts. Both options describe the value of picks __only in terms of a mean value__; in other words, the possibility of variation in the cost due to external circumstances is disregarded. In the real NFL draft, multiple factors affect the value of a pick, just like the cost of gas across different gas stations. It is clear that any redesign of the Jimmy Johnson model that does not take cost variability into account will not capture all the information that the available data on past trades has to offer.
+
+## How to determine the cost variability for each pick?
+
+
+
+
