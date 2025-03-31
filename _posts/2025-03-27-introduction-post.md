@@ -115,4 +115,4 @@ Lastly, there is a parameter to boost the grades as the pick number increases. A
 ![The round parameter](assets/img/2022_DET_PHI.jpg)
 *In trades for late round picks, grades are always generous to both teams.*
 
-Overall, the grade is always dominated by the highest of the three parameters. The other two parameters only increase the grade. The algorith is complex and will be explored further in a future post.
+Overall, the grade is always dominated by the highest of the three parameters. The other two parameters only increase the grade. The grading algorithm is complex and will be explored further in a future post.
