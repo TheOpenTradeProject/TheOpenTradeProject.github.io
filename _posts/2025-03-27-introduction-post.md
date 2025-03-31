@@ -113,4 +113,4 @@ The value parameter is somewhat balanced: according to our model, New York got a
 Lastly, there is a parameter to boost the grades as the pick number increases. As the quality of players available decreases across the rounds, teams have more "equally good" players to choose from, especially in the later rounds. The __round parameter__ was designed to generate more lenient grading for the late rounds.
 
 ![The round parameter](assets/img/2022_DET_PHI.jpg)
-* In trades for late round picks, grades are always generous to both teams.*
+*In trades for late round picks, grades are always generous to both teams.*
