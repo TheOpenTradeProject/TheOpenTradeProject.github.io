@@ -24,7 +24,7 @@ Trades for the 2025 NFL Draft will be graded live [here](https://x.com/TheOpenTr
 The Jimmy Johnson Trade Value Chart is a widely used tool in the NFL to assess the relative value of draft picks during trades. Created in the early 1990s by former Dallas Cowboys head coach Jimmy Johnson, the chart assigns a numerical value to each pick in the draft, with the highest values placed on early first-round selections and progressively lower values assigned to later picks. This straightforward scoring system helps teams evaluate whether a proposed trade involving draft picks is fair or advantageous. 
 
 ![The Jimmy Johnson Trade Value Chart](assets/img/JJtradechart.svg)
-*Figure 1: The classic Jimmy Johnson Trade Value Chart, a staple in NFL draft trade analysis. The value function decays very rapidly.*
+*The classic Jimmy Johnson Trade Value Chart, a staple in NFL draft trade analysis. The value function decays very rapidly.*
 
 NFL draft trades don't always reflect pick values according to the Jimmy Johnson model, leading to speculation about "winners or losers" for each trade, as well as the creation of new models which better describe more recent trades, such as the [Rich Hill model.](https://www.patspulpit.com/2018/4/21/17256758/2018-nfl-draft-value-chart-rich-hill) There is a common aspect in both models: each pick has a fixed value; for example, pick 21 is worth 800 points in the Jimmy Johnson chart. Suppose 3 hypothetical trades, where pick 21 sells for 780, 800 and 820 points. On average, pick 21 was transacted for 800 points. But how about the variance?
 
@@ -107,3 +107,10 @@ In the previous case, the distance parameter helped the grade of the buyer team;
   <a href="https://twitter.com/TheOpenTrade/status/1906730931974541630?ref_src=twsrc%5Etfw">March 31, 2025</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+The value parameter is somewhat balanced: according to our model, New York got a 58-th percentile value and Minnesota got a 42-th percentile value. New York is trading down a single pick; in that case, it is reasonable to assume the team has similarly graded players available. Trading down a just a few picks (one in that case) is assumed to be advantageous to the team trading back. New York gets a combined benefit from the value parameter and the distance parameter, resulting in a grade higher than both;  The distance parameter also helps Minnesota's grade, which is higher than it would be considering only the value parameter. 
+
+Lastly, there is a parameter to boost the grades as the pick number increases. As the quality of players available decreases across the rounds, teams have more "equally good" players to choose from, especially in the later rounds. The __round parameter__ was designed to generate more lenient grading for the late rounds.
+
+![The round parameter](assets/img/2022_DET_PHI.jpg)
+* In trades for late round picks, grades are always generous to both teams.*
