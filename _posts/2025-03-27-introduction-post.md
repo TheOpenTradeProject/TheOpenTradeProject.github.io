@@ -89,4 +89,6 @@ Let's exemplify how the trading algorithm works with a trade from 2022. The Pack
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+In this trade, Minnesota gained a whopping 120 points. Likewise, Green Bay lost 120 points. Considering the Jimmy Johnson trade chart, this was obviously a good trade for Minnesota; according to our model, Minnesota got a 99-plus percentile value for its pick; Green Bay got less than a 1-percentile value. 
 
+Minnesota's grade reflects one of our grading variables: __value__. If a team gets a high percentile value on a trade, its grade will always at least match that number (and will be potentially higher). 
