@@ -223,3 +223,7 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+twitter:
+  card: summary_large_image
+  site: "@TheOpenTrade"
