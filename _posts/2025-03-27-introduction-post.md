@@ -74,7 +74,7 @@ The visual output of the Open Trade Project is a draft simulator/grader, availab
 
 ## The grading algorithm
 
-Let's imagine a generic trade where one team gets 
+Let's exemplify how the trading algorithm works with a trade from 2022. The Packers traded up for WR Christian Waston, surrending picks 53 and 59 to the Vikings in exchange for pick 34:
 
 <blockquote class="twitter-tweet"><a href="https://x.com/TheOpenTrade/status/1906717310250803302/photo/1"></a></blockquote> 
 
