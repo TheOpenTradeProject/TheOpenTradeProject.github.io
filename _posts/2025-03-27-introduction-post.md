@@ -91,4 +91,19 @@ Let's exemplify how the trading algorithm works with a trade from 2022. The Pack
 
 In this trade, Minnesota gained a whopping 120 points. Likewise, Green Bay lost 120 points. Considering the Jimmy Johnson trade chart, this was obviously a good trade for Minnesota; according to our model, Minnesota got a 99-plus percentile value for its pick; Green Bay got less than a 1-percentile value. 
 
-Minnesota's grade reflects one of our grading variables: __value__. If a team gets a high percentile value on a trade, its grade will always at least match that number (and will be potentially higher). 
+Minnesota's grade reflects one of our grading parameters: __value__. If a team gets a high percentile value on a trade, its grade will always at least match that number (and will be potentially higher). 
+
+On the other hand, it seems that Green Bay still got a decent grade, despite getting a bad percentile value on the trade. Our grading model includes additional parameters to make grading more fair on certain conditions. In that case, Green Bay is trading up 19 picks in the second round. It is understood that the team trading up will likely need to pay a higher price the higher the __distance__ is; therefore, a distance parameter is included. Green Bay's grade of 55.0 is pretty close to the expected average of 60. This grade is dominated by the distance parameter, and not by the value parameter.
+
+In the previous case, the distance parameter helped the grade of the buyer team; sometimes, it may help the seller team. Here's an example:
+
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    In 2024, the Vikings traded up for QB J.J. McCarthy. According to the Jimmy Johnson chart, the Jets surrended 1309 points and received 1321.6 points.
+    <a href="https://t.co/qoTAeq5WRd">https://t.co/qoTAeq5WRd</a>
+    <a href="https://t.co/R8k9qyyu7z">pic.twitter.com/R8k9qyyu7z</a>
+  </p>
+  — The Open Trade Project (@TheOpenTrade)
+  <a href="https://twitter.com/TheOpenTrade/status/1906730931974541630?ref_src=twsrc%5Etfw">March 31, 2025</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
