@@ -76,5 +76,17 @@ The visual output of the Open Trade Project is a draft simulator/grader, availab
 
 Let's exemplify how the trading algorithm works with a trade from 2022. The Packers traded up for WR Christian Waston, surrending picks 53 and 59 to the Vikings in exchange for pick 34:
 
-<blockquote class="twitter-tweet"><a href="https://x.com/TheOpenTrade/status/1906717310250803302/photo/1"></a></blockquote> 
+<blockquote class="twitter-tweet">
+  <p lang="en" dir="ltr">
+    In 2022, the Packers traded up for WR Christian Watson. According to the Jimmy Johnson chart, the Vikings surrendered 560 points and received 680 points.
+    <a href="https://t.co/qoTAeq5WRd">https://t.co/qoTAeq5WRd</a>
+    <a href="https://t.co/rYwihsJw9X">pic.twitter.com/rYwihsJw9X</a>
+  </p>
+  &mdash; The Open Trade Project (@TheOpenTrade)
+  <a href="https://twitter.com/TheOpenTrade/status/1906717310250803302?ref_src=twsrc%5Etfw">
+    March 31, 2025
+  </a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
