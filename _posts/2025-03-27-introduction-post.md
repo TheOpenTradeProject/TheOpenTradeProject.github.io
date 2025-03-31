@@ -76,3 +76,5 @@ The visual output of the Open Trade Project is a draft simulator/grader, availab
 
 Let's imagine a generic trade where one team gets 
 
+<blockquote class="twitter-tweet"><a href="https://x.com/TheOpenTrade/status/1906717310250803302/photo/1"></a></blockquote> 
+
