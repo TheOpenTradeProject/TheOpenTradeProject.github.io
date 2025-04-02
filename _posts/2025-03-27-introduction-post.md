@@ -93,7 +93,7 @@ In this trade, Minnesota gained a whopping 120 points. Likewise, Green Bay lost 
 
 Minnesota's grade reflects one of our grading parameters: __value__. If a team gets a high percentile value on a trade, its grade will always at least match that number (and will be potentially higher). 
 
-On the other hand, it seems that Green Bay still got a decent grade, despite getting a bad percentile value on the trade. Our grading model includes additional parameters to make grading more fair on certain conditions. In that case, Green Bay is trading up 19 picks in the second round. It is understood that the team trading up will likely need to pay a higher price the higher the __distance__ is; therefore, a distance parameter is included. Green Bay's grade of 55.0 is pretty close to the expected average of 60. This grade is dominated by the distance parameter, and not by the value parameter.
+On the other hand, it seems that Green Bay still got a decent grade, despite getting a bad percentile value on the trade. Our grading model includes additional parameters to make grading more fair on certain conditions. In that case, Green Bay is trading up 19 picks in the second round. It is understood that the team trading up will likely need to pay a higher price the higher the __distance__ is; therefore, a distance parameter is included. Green Bay's grade of 55.0 is pretty close to the expected average of 50. This grade is dominated by the distance parameter, and not by the value parameter.
 
 In the previous case, the distance parameter helped the grade of the buyer team; sometimes, it may help the seller team. Here's an example:
 
