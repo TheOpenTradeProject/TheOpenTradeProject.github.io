@@ -58,8 +58,9 @@ webmaster_verifications:
 
 # Web Analytics Settings
 analytics:
-  google:
-    id: # fill in your Google Analytics ID
+  google_analytics:
+  id: G-216YK2VFJS
+  pv: true # Optional: enables pageview tracking
   goatcounter:
     id: # fill in your GoatCounter ID
   umami:
